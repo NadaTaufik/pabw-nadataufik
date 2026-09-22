@@ -72,7 +72,26 @@
 
         <section id="add-goal">
             <h2>Add a Learning Goal</h2>
-            <!-- Form will be added in Sheet E -->
+            <form action="/simpan" method="post">
+
+    <p>
+        <label for="skill-name">Skill Name</label>
+        <input type="text" id="skill-name" name="skill-name" required>
+    </p>
+
+    <p>
+        <label for="target-level">Target Level</label>
+        <input type="text" id="target-level" name="target-level" required>
+    </p>
+
+    <p>
+        <label for="target-date">Target Date</label>
+        <input type="date" id="target-date" name="target-date" required>
+    </p>
+
+    <button type="submit">Save</button>
+
+</form>
         </section>
 
     </main>
