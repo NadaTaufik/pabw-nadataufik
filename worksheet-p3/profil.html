@@ -1,10 +1,38 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Informatics Learning Roadmap</title>
+
+    <style>
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px 12px;
+        }
+
+        caption {
+            caption-side: bottom;
+            padding-top: 8px;
+            text-align: center;
+        }
+
+        figure {
+            text-align: center;
+        }
+
+        figure img {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -59,39 +87,53 @@
             </table>
 
             <figure>
-    <img src="coding-setup.png"
-         alt="VS Code and a web browser displaying my Informatics learning roadmap during development."
-         width="640"
-         height="360"
-         loading="lazy">
+                <img
+                    src="coding-setup.png"
+                    alt="VS Code and a web browser displaying my Informatics learning roadmap during development."
+                    width="640"
+                    height="360"
+                    loading="lazy">
 
-    <figcaption>My web development learning setup.</figcaption>
-</figure>
+                <figcaption>My web development learning setup.</figcaption>
+            </figure>
 
         </section>
 
         <section id="add-goal">
             <h2>Add a Learning Goal</h2>
+
             <form action="/simpan" method="post">
 
-    <p>
-        <label for="skill-name">Skill Name</label>
-        <input type="text" id="skill-name" name="skill-name" required>
-    </p>
+                <p>
+                    <label for="skill-name">Skill Name</label>
+                    <input
+                        type="text"
+                        id="skill-name"
+                        name="skill-name"
+                        required>
+                </p>
 
-    <p>
-        <label for="target-level">Target Level</label>
-        <input type="text" id="target-level" name="target-level" required>
-    </p>
+                <p>
+                    <label for="target-level">Target Level</label>
+                    <input
+                        type="text"
+                        id="target-level"
+                        name="target-level"
+                        required>
+                </p>
 
-    <p>
-        <label for="target-date">Target Date</label>
-        <input type="date" id="target-date" name="target-date" required>
-    </p>
+                <p>
+                    <label for="target-date">Target Date</label>
+                    <input
+                        type="date"
+                        id="target-date"
+                        name="target-date"
+                        required>
+                </p>
 
-    <button type="submit">Save</button>
+                <button type="submit">Save</button>
 
-</form>
+            </form>
         </section>
 
     </main>
